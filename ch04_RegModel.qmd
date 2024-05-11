@@ -1,0 +1,33 @@
+---
+title: "Ch 4. Bayesian Regression Models"
+description: "베이즈 회귀 모델 정리"
+catetories: [Bayesian, Regression]
+date: "`r format(Sys.Date())`"
+author: 
+  name: "Jihee Han"
+  email: "jihee000904@gmail.com"
+format:
+  html:
+    theme: "styles.scss"
+    toc: true
+execute:
+  echo: true
+  eval: true
+---
+
+```{r}
+#| echo: false
+#| eval: false
+source("pkg.R")
+```
+
+# 4.1 Linear Regression: 주의 부하가 동공 크기에 영향을 미치는가?
+
+## 1. Likelihood and priors
+
+-   assumptions:
+    1.  동공의 평균 크기: $\alpha$
+    2.  동공의 크기에 주의 부하가 미치는 영향: $\beta$
+    3.  동공 크기의 분산(노이즈): $\sigma$
+    4.  노이즈는 정규 분포를 따름
+-   따라서, $\text{p_size}_n \sim Normal(\alpha + \text{c_load}_n \cdot \beta, \sigma)$ 

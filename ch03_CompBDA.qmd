@@ -1,0 +1,23 @@
+---
+title: "Ch 3. Computational Bayesian Data Analysis"
+description: "웅냥냥"
+catetories: [Bayesian]
+date: "`r format(Sys.Date())`"
+author: 
+  name: "Jihee Han"
+  email: "jihee000904@gmail.com"
+format:
+  html:
+    theme: "styles.scss"
+    toc: true
+execute:
+  echo: true
+  eval: true
+---
+
+```{r}
+#| echo: false
+#| eval: false
+source("pkg.R")
+```
+
